@@ -1,0 +1,32 @@
+{
+  "name": "ProtectTom",
+  "description": "A Telegram Bot to Protect groupsand channels",
+  "logo": "",
+  "keywords": [
+    "telegram",
+    "bot",
+    "python",
+    "pyrogram"/
+  ],
+    "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "repository": "https://github.com/tomfactor/Keb",
+  "env": {
+    "API_ID": {
+      "description": "Get this value from my.telegram.org/apps.",
+      "required": true,
+      "value": "10871792"
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org/apps.",
+      "required": true,
+      "value": "6f3f84d0b392900e09b0aed186470890"
+    },
+    "BOT_TOKEN": {
+      "description": "Get this value from @BotFather",
+      "required": true,
+      "value": "5378293477:AAFSuiJceFBukUgNZgvu9NPD9dEM6Zkhx9o"
+    }
+  }
+}
