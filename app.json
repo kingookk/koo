@@ -1,18 +1,14 @@
 {
-  "name": "ProtectTom",
-  "description": "A Telegram Bot to Protect groupsand channels",
-  "logo": "https://telegra.ph/file/b3e5093cb07c6185cd3fc.jpg",
-  "keywords": [
+    "name": "𝙎𝙊𝙐𝙍𝘾𝙀 𝘿𝘼𝙍𝙆",
+    "description": "- سـورس〔 دارك - 𝙎𝙊𝙐𝙍𝘾𝙀 𝘿𝘼𝙍𝙆 〕.. تنصيب بـوت 🎸 لـ تشغيـل القـرآن والفيديـو والبثـوث المباشـرة فـي المكالمـات الصوتيـه والمرئيـة عـلى تيليجــرام",
+    "logo": "https://telegra.ph/file/b3e5093cb07c6185cd3fc.jpg",
+    "keywords": [
     "telegram",
     "bot",
     "python",
-    "pyrogram"/
-  ],
-    "buildpacks": [{
-    "url": "heroku/python"
-  }],
-  "repository": "https://github.com/kingookk/koo",
-  "env": {
+    "pyrogram"
+    ],
+    "env": {
     "API_ID": {
       "description": "Get this value from my.telegram.org/apps.",
       "required": true,
@@ -27,6 +23,23 @@
       "description": "Get this value from @BotFather",
       "required": true,
       "value": ""
-    }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/kingookk/koo.git"
+          }
+      ],
+      "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "basic"
+          }
+      },
+      "stack": "container"
   }
-}
